@@ -502,9 +502,9 @@ func getPathSymbolString(p *api.Path, idx int, showBest bool) string {
 	switch vsec {
 	case 2:
 		symbols += ",V"
-	case 1:
+	case 3:
 		symbols += ",I"
-	case 0:
+	case 1:
 		symbols += ",N"
 	default:
 		symbols += ",N"
