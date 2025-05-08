@@ -28,7 +28,7 @@ RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest && go install
 # install gobgpsrx
 ENV CGO_LDFLAGS="-L/usr/local/lib64/srx/ -Wl,-rpath -Wl,/usr/local/lib64/srx/" CGO_CFLAGS="-I/usr/local/include/srx/"
 RUN git clone https://github.com/kyehwanl/GoBGPSec.git && \
-    cd gobgpsrx && \
+    cd GoBGPSec && \
     go build -o /usr/local/go/bin ./...
 
 
